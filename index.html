@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Courses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Body and Typography */
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: #333;
+            background-color: #f4f7fa;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            color: #1e3a8a; /* A deep blue for headings */
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 3em;
+            margin-bottom: 0.2em;
+            color: white;
+        }
+
+        .hero-content p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .button {
+            background-color: #f97316; /* Vibrant orange accent color */
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #ea580c;
+        }
+
+        /* Main Content Layout */
+        .content-container {
+            display: flex;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            gap: 40px;
+        }
+
+        .main-content {
+            flex: 3;
+        }
+
+        .sidebar {
+            flex: 1;
+            position: sticky; /* Makes the sidebar sticky */
+            top: 20px;
+            height: fit-content;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+        }
+
+        .sidebar h4 {
+            margin-top: 0;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        /* Course Grid */
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .course-card {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .course-card h3 {
+            margin-top: 0;
+        }
+
+        .course-card .price {
+            display: block;
+            margin-top: 15px;
+            font-size: 1.5em;
+            font-weight: 600;
+            color: #f97316;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Responsive Design for smaller screens */
+        @media (max-width: 768px) {
+            .content-container {
+                flex-direction: column;
+            }
+
+            .hero-section {
+                padding: 60px 20px;
+            }
+
+            .hero-content h1 {
+                font-size: 2.2em;
+            }
+
+            .sidebar {
+                position: static;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Learn Python with Me</h1>
+            <p>Unlock your potential with expert-led Python programming courses.</p>
+            <a href="#courses-section" class="button">Explore Courses</a>
+        </div>
+    </header>
+
+    <main class="content-container">
+        <section class="main-content">
+            <h2 id="courses-section">My Python Courses</h2>
+            <div class="course-grid">
+                <div class="course-card">
+                    <h3>Python Fundamentals</h3>
+                    <p>A beginner-friendly course to get you started with the basics of Python programming.</p>
+                    <span class="price">$99</span>
+                </div>
+                <div class="course-card">
+                    <h3>Web Development with Django</h3>
+                    <p>Learn to build robust web applications using the powerful Django framework.</p>
+                    <span class="price">$149</span>
+                </div>
+                <div class="course-card">
+                    <h3>Data Science with Python</h3>
+                    <p>Dive into data analysis, visualization, and machine learning with Python libraries.</p>
+                    <span class="price">$199</span>
+                </div>
+                </div>
+        </section>
+
+        <aside class="sidebar">
+            <div class="sidebar-section registration-form">
+                <h4>Enroll Now</h4>
+                <p>Fill out the form below to register your interest for any course.</p>
+                <iframe src="YOUR_GOOGLE_FORM_EMBED_URL_HERE" width="100%" height="300" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+
+            <div class="sidebar-section contact-info">
+                <h4>Contact Me</h4>
+                <p>Have a question? Feel free to reach out for help!</p>
+                <ul>
+                    <li><strong>Email:</strong> your.email@example.com</li>
+                    <li><strong>LinkedIn:</strong> <a href="YOUR_LINKEDIN_URL_HERE" target="_blank">Your Name</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
